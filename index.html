@@ -15,11 +15,23 @@
 <script>
 (() => {
   const url = ((window.YY_CONFIG || {}).planilhaUrl || '').trim();
+  // Aviso no celular da clínica (app ntfy), enviado pelo navegador do paciente — sem nome nem telefone
+  const avisarSolicitacao = (d) => {
+    try {
+      const p = String(d.data || '').split('-');
+      const dias = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
+      const dia = p.length === 3 ? dias[new Date(+p[0], +p[1] - 1, +p[2]).getDay()] + ', ' + p[2] + '/' + p[1] : d.data;
+      fetch('https://ntfy.sh/', { method: 'POST', body: JSON.stringify({
+        topic: 'yinyang-fisio-9f6fd6ee7a', title: 'Nova solicitação de avaliação', tags: ['calendar'],
+        message: d.tratamento + ' · ' + d.local + ' · ' + dia + ' às ' + d.hora + '\nVeja os dados no e-mail ou na planilha.'
+      }) }).catch(() => {});
+    } catch (e) {}
+  };
   window.YY_ENVIAR = (dados) => {
     if (!url) return Promise.reject(new Error('sem-planilha'));
     return fetch(url, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(dados) })
       .then((r) => r.json())
-      .then((j) => { if (!j || !j.ok) throw new Error((j && j.erro) || 'erro'); return j; });
+      .then((j) => { if (!j || !j.ok) throw new Error((j && j.erro) || 'erro'); avisarSolicitacao(dados); return j; });
   };
   window.YY_OCUPADOS = () => url ? fetch(url + '?acao=ocupados').then((r) => r.json()).then((j) => (j && j.ocupados) || []) : Promise.resolve([]);
 })();
