@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yin Yang Fisioterapia e Pilates — Copacabana, Rio de Janeiro</title>
+<meta name="description" content="Fisioterapia, Pilates, Quiropraxia, Acupuntura e Massagens em Copacabana com o Dr. Weslley Barros (CREFITO 331513-F). Atendimento também em domicílio. Agende sua avaliação pelo WhatsApp.">
+<meta name="theme-color" content="#1F331E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yin Yang Fisioterapia e Pilates — Copacabana">
+<meta property="og:description" content="Fisioterapia, Pilates e terapias integrativas em Copacabana. Planos a partir de R$ 200,00. Atendimento também em domicílio.">
+<meta property="og:image" content="imagens/pilates-cadillac.jpg">
+<link rel="icon" type="image/png" href="imagens/logo.png">
+<script src="config.js"></script>
+<script>
+(() => {
+  const url = ((window.YY_CONFIG || {}).planilhaUrl || '').trim();
+  window.YY_ENVIAR = (dados) => {
+    if (!url) return Promise.reject(new Error('sem-planilha'));
+    return fetch(url, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(dados) })
+      .then((r) => r.json())
+      .then((j) => { if (!j || !j.ok) throw new Error((j && j.erro) || 'erro'); return j; });
+  };
+  window.YY_OCUPADOS = () => url ? fetch(url + '?acao=ocupados').then((r) => r.json()).then((j) => (j && j.ocupados) || []) : Promise.resolve([]);
+})();
+</script>
+<link rel="apple-touch-icon" href="imagens/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Mulish:wght@400;600;700&amp;family=Dancing+Script:wght@600&amp;family=Great+Vibes&amp;family=Pinyon+Script&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBF9F3;overflow-x:hidden}
+img{max-width:100%}
+html{scroll-behavior:smooth;scroll-padding-top:200px}
+a{color:#2E4A2C}a:hover{color:#1B2E1A}
+a:focus-visible,button:focus-visible{outline:3px solid #B8901E;outline-offset:3px}
+.yy-tab:hover{border-color:#B8901E}
+.yy-wa:hover{background:#1B2E1A}
+@keyframes yyTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes yyPulse{0%,100%{box-shadow:0 0 0 0 rgba(201,162,39,.55)}50%{box-shadow:0 0 0 12px rgba(201,162,39,0)}}
+@keyframes yyFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes yyShine{from{background-position:-200% 0}to{background-position:200% 0}}
+.yy-ticker{display:flex;width:max-content;animation:yyTicker 28s linear infinite}
+.yy-ticker:hover{animation-play-state:paused}
+.yy-pulse{animation:yyPulse 2.2s ease-out infinite}
+.yy-float{animation:yyFloat 3.2s ease-in-out infinite}
+.yy-price{background:linear-gradient(100deg,#8A6A12 30%,#E4C665 45%,#8A6A12 60%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:yyShine 4s linear infinite}
+.yy-chip{transition:background .2s,color .2s,border-color .2s}
+.yy-navtab{transition:background .2s,color .2s,border-color .2s}.yy-navtab:hover{background:#2E4A2C!important;color:#FBF9F3!important;border-color:#2E4A2C!important}
+.yy-navrow{scrollbar-width:none}.yy-navrow::-webkit-scrollbar{display:none}
+@media (max-width: 760px){.yy-top{padding:8px 14px!important;gap:8px 12px!important}.yy-topright{margin-left:0!important;width:100%;flex-direction:column!important;align-items:flex-start!important;gap:4px!important}.yy-topright>span:first-child{margin-bottom:-4px!important}.yy-addr{font-size:12px!important;text-align:left!important;justify-content:flex-start!important}.yy-navrow{justify-content:flex-start!important;flex-wrap:nowrap!important;overflow-x:auto;padding:8px 14px!important}.yy-navtab{white-space:nowrap;font-size:14px!important;padding:8px 14px!important;min-height:40px!important}html{scroll-padding-top:200px}}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}.yy-ticker,.yy-pulse,.yy-float,.yy-price{animation:none!important}}
+</style>
+<style>.yy-root{min-height:100vh}</style>
+</head>
+<body>
+<div id="app" class="yy-root"></div>
+<template id="yy-tpl">
+<div style="font-family: Mulish, 'Segoe UI', system-ui, sans-serif; color: #26301F; background: #FBF9F3; font-size: 17px; line-height: 1.6">
+
+  <!-- Topo -->
+  <header style="position: sticky; top: 0; z-index: 50; box-shadow: 0 4px 14px rgba(20, 35, 20, 0.25)">
+    <div class="yy-top" style="background: #1F331E; padding: 10px clamp(16px, 3vw, 40px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px">
+      <a href="#inicio" style="display: flex; align-items: center; gap: 18px; text-decoration: none">
+        <img src="imagens/logo.png" alt="Logo Yin Yang Fisioterapia e Pilates" style="width: clamp(72px, 15vw, 112px); height: auto; aspect-ratio: 1 / 1; border-radius: 50%; box-shadow: 0 0 0 2px #C9A227">
+        <span style="display: flex; flex-direction: column; line-height: 1.1">
+          <img src="imagens/nome-yin-yang.png" alt="Yin Yang" style="display: block; width: clamp(150px, 36vw, 240px); height: auto">
+          <span style="margin-top: 2px; font-family: Marcellus, Georgia, serif; font-size: clamp(15px, 3.6vw, 18px); letter-spacing: 0.5px; color: #E4C665">Fisioterapia e Pilates</span>
+        </span>
+      </a>
+      <div class="yy-topright" style="margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; min-width: 0">
+        <span class="yy-addr" style="display: block; margin-bottom: -8px; color: #E4C665; font-family: Marcellus, Georgia, serif; font-size: 15px; letter-spacing: 0.5px; text-align: right">Atendimento</span>
+        <span class="yy-addr" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; color: #FBF9F3; font-size: 18px; font-weight: 700; letter-spacing: 0.3px">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E4C665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>
+          <span>(21) 96800-9771</span>
+        </span>
+        <a class="yy-addr" href="https://www.google.com/maps/search/?api=1&amp;query=Av+Nossa+Senhora+de+Copacabana+1072+Rio+de+Janeiro" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; text-align: right; color: #E9E2CC; text-decoration: none; font-size: 14px">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E4C665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"></path><circle cx="12" cy="10" r="2.6"></circle></svg>
+          <span>Av. Nossa Senhora de Copacabana, 1072, sala 304 — Copacabana, RJ</span>
+        </a>
+      </div>
+    </div>
+    <nav aria-label="Seções do site" class="yy-navrow" style="background: #F1EAD3; border-top: 3px solid #C9A227; border-bottom: 1px solid #E0D6B5; padding: 10px clamp(16px, 3vw, 40px); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px">
+      <a class="yy-navtab" href="#especialidades" style="display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 8px 22px; border: 1.5px solid #C9B98A; border-radius: 12px; background: #FBF9F3; color: #1F331E; text-decoration: none; font-size: 15px; font-weight: 700">Especialidades</a>
+      <a class="yy-navtab" href="#sobre" style="display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 8px 22px; border: 1.5px solid #C9B98A; border-radius: 12px; background: #FBF9F3; color: #1F331E; text-decoration: none; font-size: 15px; font-weight: 700">Sobre</a>
+      <a class="yy-navtab" href="#avaliacoes" style="display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 8px 22px; border: 1.5px solid #C9B98A; border-radius: 12px; background: #FBF9F3; color: #1F331E; text-decoration: none; font-size: 15px; font-weight: 700">Avaliações</a>
+      <a class="yy-navtab" href="#localizacao" style="display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 8px 22px; border: 1.5px solid #C9B98A; border-radius: 12px; background: #FBF9F3; color: #1F331E; text-decoration: none; font-size: 15px; font-weight: 700">Localização</a>
+      <a class="yy-navtab" href="#contato" style="display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 8px 22px; border: 1.5px solid #C9B98A; border-radius: 12px; background: #FBF9F3; color: #1F331E; text-decoration: none; font-size: 15px; font-weight: 700">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" style="max-width: 1180px; margin: 0 auto; padding: clamp(40px, 7vw, 72px) clamp(18px, 4vw, 24px) clamp(56px, 9vw, 88px); display: flex; flex-wrap: wrap; align-items: center; gap: clamp(36px, 6vw, 56px)">
+    <div style="flex: 1 1 320px; min-width: 0">
+      <p style="margin: 0 0 12px; font-family: 'Dancing Script', cursive; font-size: clamp(24px, 5vw, 30px); color: #8A6A12">Equilibrando a sua saúde</p>
+      <h1 style="margin: 0; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: clamp(32px, 5.4vw, 66px); line-height: 1.08; color: #1F331E">Fisioterapia, Pilates e terapias integrativas em Copacabana</h1>
+      <p style="margin: 24px 0 0; max-width: 34em; font-size: clamp(17px, 2.2vw, 19px); color: #44503B">Consultório do Dr. Weslley Barros. Cuidamos da dor, da postura e do movimento com tratamentos que unem a fisioterapia a técnicas como quiropraxia, acupuntura e massagem — no consultório ou na sua casa.</p>
+      <div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px">
+        <a class="yy-wa" href="https://wa.me/5521968009771" style="text-decoration: none; background: #2E4A2C; color: #FBF9F3; padding: 16px 28px; border-radius: 999px; font-weight: 700; transition: background .2s">Agendar avaliação</a>
+        <a href="#especialidades" style="text-decoration: none; border: 1.5px solid #2E4A2C; color: #2E4A2C; padding: 15px 28px; border-radius: 999px; font-weight: 700">Conhecer os tratamentos</a>
+      </div>
+      <p class="yy-pulse" style="margin: 28px 0 0; display: inline-flex; align-items: center; gap: 10px; background: #F1EAD3; border: 1px solid #E0D6B5; border-radius: 999px; padding: 8px 16px; font-size: 15px; font-weight: 700; color: #2E4A2C"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></svg>Atendemos também em domicílio</p>
+    </div>
+    <div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center">
+      <div style="position: relative; width: min(460px, 100%); padding: 0 0 clamp(24px, 6vw, 36px) clamp(24px, 6vw, 36px); box-sizing: border-box">
+        <img src="imagens/pilates-cadillac.jpg" alt="Aluna fazendo exercício no Cadillac de Pilates na sala do consultório" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 999px 999px 24px 24px; box-shadow: 0 0 0 10px #FBF9F3, 0 0 0 12px #C9A227">
+        <img src="imagens/logo.png" alt="" aria-hidden="true" style="position: absolute; left: 0; bottom: 0; width: clamp(92px, 26vw, 148px); height: auto; aspect-ratio: 1 / 1; border-radius: 50%; box-shadow: 0 0 0 6px #FBF9F3, 0 0 0 8px #C9A227">
+      </div>
+    </div>
+  </section>
+
+  <!-- Promoção -->
+  <section id="planos" aria-label="Promoção de planos" style="background: #F1EAD3; border-top: 1px solid #E0D6B5">
+    <div style="overflow: hidden; background: #C9A227; color: #1F331E; font-weight: 700; font-size: 15px">
+      <div class="yy-ticker" aria-hidden="true">
+        <span style="display: flex; gap: 40px; padding: 12px 20px; white-space: nowrap"><span>Planos a partir de R$ 200,00</span><span>✦</span><span>Atendimento em domicílio</span><span>✦</span><span>Pilates</span><span>✦</span><span>Fisioterapia</span><span>✦</span><span>Quiropraxia</span><span>✦</span><span>Acupuntura</span><span>✦</span><span>Massagem com pedras quentes</span><span>✦</span></span>
+        <span style="display: flex; gap: 40px; padding: 12px 20px; white-space: nowrap"><span>Planos a partir de R$ 200,00</span><span>✦</span><span>Atendimento em domicílio</span><span>✦</span><span>Pilates</span><span>✦</span><span>Fisioterapia</span><span>✦</span><span>Quiropraxia</span><span>✦</span><span>Acupuntura</span><span>✦</span><span>Massagem com pedras quentes</span><span>✦</span></span>
+      </div>
+    </div>
+    <div style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 8vw, 80px) clamp(18px, 4vw, 24px); display: flex; flex-wrap: wrap; gap: clamp(28px, 5vw, 56px); align-items: center">
+      <div style="flex: 1 1 300px; min-width: 0">
+        <p style="margin: 0; font-family: 'Dancing Script', cursive; font-size: clamp(24px, 5vw, 30px); color: #8A6A12">Promoção especial</p>
+        <h2 style="margin: 6px 0 0; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: clamp(30px, 4vw, 44px); line-height: 1.15; color: #1F331E">Planos a partir de</h2>
+        <p class="yy-float" style="margin: 8px 0 0; font-family: Marcellus, Georgia, serif; line-height: 1"><span class="yy-price" style="font-size: clamp(64px, 12vw, 104px)">R$ 200</span><span class="yy-price" style="font-size: clamp(30px, 5vw, 44px)">,00</span></p>
+        <a data-region="promoBtn" class="yy-pulse" href="{{waLink}}" style="margin-top: 28px; max-width: 360px; display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; background: #2E4A2C; color: #FBF9F3; padding: 17px 24px; border-radius: 999px; font-weight: 700; font-size: 17px; letter-spacing: 1px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E4C665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3L3 21z"></path></svg>SAIBA MAIS</a>
+        <p style="margin: 12px 0 0; font-size: 13px; color: #5A6450; max-width: 360px; text-align: center">Abre o WhatsApp com sua escolha já escrita. Valores e condições conforme avaliação.</p>
+      </div>
+      <div data-region="promoCard" style="flex: 1 1 340px; min-width: 0; background: #FBF9F3; border-radius: 22px; padding: clamp(22px, 4vw, 36px); box-shadow: 0 0 0 2px #C9A227">
+        <p id="yy-servico" style="margin: 0 0 12px; font-weight: 700; color: #1F331E">1. Escolha o tratamento</p>
+        <div role="group" aria-labelledby="yy-servico" style="display: flex; flex-wrap: wrap; gap: 8px">
+          <sc-for list="{{svcChips}}" as="c" hint-placeholder-count="5">
+            <button class="yy-chip" aria-pressed="{{c.pressed}}" onClick="{{c.pick}}" style="{{c.style}}">{{c.label}}</button>
+          </sc-for>
+        </div>
+        <p id="yy-local" style="margin: 24px 0 12px; font-weight: 700; color: #1F331E">2. Onde prefere ser atendido?</p>
+        <div role="group" aria-labelledby="yy-local" style="display: flex; flex-wrap: wrap; gap: 8px">
+          <sc-for list="{{placeChips}}" as="c" hint-placeholder-count="2">
+            <button class="yy-chip" aria-pressed="{{c.pressed}}" disabled="{{c.disabled}}" title="{{c.title}}" onClick="{{c.pick}}" style="{{c.style}}">{{c.label}}</button>
+          </sc-for>
+        </div>
+        <p style="margin: 10px 0 0; font-size: 13px; color: #5A6450">Atendimento em domicílio disponível para Fisioterapia e Massagens.</p>
+        <p style="margin: 24px 0 0; font-size: 15px; color: #5A6450">Seu plano: <strong style="color: #2E4A2C">{{planLabel}}</strong></p>
+        <button aria-expanded="{{bookOpenAttr}}" aria-controls="yy-agenda" onClick="{{toggleBook}}" style="margin-top: 14px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; border: none; background: #C9A227; color: #1F331E; padding: 16px 24px; border-radius: 999px; font-family: Mulish, sans-serif; font-weight: 700; font-size: 16px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F331E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"></rect><path d="M3.5 9.5h17"></path><path d="M8 3v4"></path><path d="M16 3v4"></path><path d="M9 15l2 2 4-4"></path></svg>Solicitar atendimento</button>
+        <sc-if value="{{bookOpen}}" hint-placeholder-val="{{ false }}">
+          <div id="yy-agenda" style="margin-top: 18px; border-top: 1px solid #E0D6B5; padding-top: 20px">
+            <sc-if value="{{sent}}" hint-placeholder-val="{{ false }}">
+              <div role="status" style="background: #EEF3EA; border: 1.5px solid #2E4A2C; border-radius: 16px; padding: 22px; text-align: center">
+                <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2E4A2C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.5l2.7 2.7L16.5 9.5"></path></svg>
+                <p style="margin: 12px 0 0; font-family: Marcellus, Georgia, serif; font-size: 22px; color: #1F331E">Solicitação enviada!</p>
+                <p style="margin: 8px 0 0; color: #3B4733">Aguarde a confirmação da avaliação pelo Dr. Weslley. Em breve retornaremos.</p>
+                <p style="margin: 10px 0 0; font-size: 14px; color: #5A6450">{{summary}}</p>
+                <p style="margin: 10px 0 0; font-size: 14px; color: #5A6450">Você receberá a confirmação pelo WhatsApp {{phone}}.</p>
+                <button onClick="{{resetBook}}" style="margin-top: 16px; min-height: 44px; cursor: pointer; border: 1.5px solid #2E4A2C; background: transparent; color: #2E4A2C; padding: 10px 20px; border-radius: 999px; font-family: Mulish, sans-serif; font-weight: 700; font-size: 15px">Fazer nova solicitação</button>
+              </div>
+            </sc-if>
+            <sc-if value="{{formShow}}" hint-placeholder-val="{{ true }}">
+              <p style="margin: 0; font-weight: 700; color: #1F331E">3. Escolha a data</p>
+              <div style="margin-top: 12px; display: flex; align-items: center; justify-content: space-between; gap: 8px">
+                <button aria-label="Mês anterior" disabled="{{prevDisabled}}" onClick="{{prevMonth}}" style="{{prevStyle}}"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg></button>
+                <p style="margin: 0; font-family: Marcellus, Georgia, serif; font-size: 19px; color: #1F331E">{{monthLabel}}</p>
+                <button aria-label="Próximo mês" disabled="{{nextDisabled}}" onClick="{{nextMonth}}" style="{{nextStyle}}"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg></button>
+              </div>
+              <div aria-hidden="true" style="margin-top: 10px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; text-align: center; font-size: 13px; font-weight: 700; color: #5A6450">
+                <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+              </div>
+              <div style="margin-top: 4px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px">
+                <sc-for list="{{cells}}" as="d" hint-placeholder-count="35">
+                  <sc-if value="{{d.blank}}" hint-placeholder-val="{{ false }}"><span aria-hidden="true"></span></sc-if>
+                  <sc-if value="{{d.isDay}}" hint-placeholder-val="{{ true }}">
+                    <button aria-label="{{d.aria}}" aria-pressed="{{d.pressed}}" disabled="{{d.disabled}}" onClick="{{d.pick}}" style="{{d.style}}">{{d.num}}</button>
+                  </sc-if>
+                </sc-for>
+              </div>
+              <p style="margin: 8px 0 0; font-size: 13px; color: #5A6450">Datas disponíveis a partir de {{minLabel}}, de segunda a sexta-feira.</p>
+              <p style="margin: 20px 0 10px; font-weight: 700; color: #1F331E">4. Escolha o horário</p>
+              <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 8px">
+                <sc-for list="{{slots}}" as="h" hint-placeholder-count="10">
+                  <button aria-pressed="{{h.pressed}}" aria-label="{{h.aria}}" disabled="{{h.disabled}}" onClick="{{h.pick}}" style="{{h.style}}">{{h.label}}</button>
+                </sc-for>
+              </div>
+              <label for="yy-nome" style="display: block; margin: 20px 0 8px; font-weight: 700; color: #1F331E">5. Seu nome</label>
+              <input id="yy-nome" type="text" autocomplete="name" value="{{name}}" onChange="{{setName}}" placeholder="Nome completo" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 16px; border: 1.5px solid #C9B98A; border-radius: 12px; background: #FFFFFF; font-family: Mulish, sans-serif; font-size: 16px; color: #26301F">
+              <label for="yy-fone" style="display: block; margin: 16px 0 8px; font-weight: 700; color: #1F331E">6. Seu WhatsApp</label>
+              <input id="yy-fone" type="tel" inputmode="tel" autocomplete="tel-national" value="{{phone}}" onChange="{{setPhone}}" placeholder="(21) 99999-9999" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 16px; border: 1.5px solid #C9B98A; border-radius: 12px; background: #FFFFFF; font-family: Mulish, sans-serif; font-size: 16px; color: #26301F">
+              <p style="margin: 6px 0 0; font-size: 13px; color: #5A6450">É por esse número que o Dr. Weslley vai confirmar sua avaliação.</p>
+              <input id="yy-site" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" value="{{hp}}" onChange="{{setHp}}" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0">
+              <p style="margin: 16px 0 0; font-size: 15px; color: #3B4733">{{summary}}</p>
+              <sc-if value="{{ready}}" hint-placeholder-val="{{ false }}">
+                <button onClick="{{enviar}}" disabled="{{sending}}" style="margin-top: 14px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; border: none; background: #2E4A2C; color: #FBF9F3; padding: 16px 24px; border-radius: 999px; font-family: Mulish, sans-serif; font-weight: 700; font-size: 16px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E4C665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>{{sendLabel}}</button>
+              </sc-if>
+              <sc-if value="{{notReady}}" hint-placeholder-val="{{ true }}">
+                <button disabled="{{ true }}" style="margin-top: 14px; width: 100%; cursor: not-allowed; border: 1.5px dashed #CFC4A3; background: transparent; color: #8C8670; padding: 15px 24px; border-radius: 999px; font-family: Mulish, sans-serif; font-weight: 700; font-size: 16px">Escolha data, horário e informe nome e WhatsApp</button>
+              </sc-if>
+              <sc-if value="{{sendError}}" hint-placeholder-val="{{ false }}">
+                <div role="alert" style="margin-top: 14px; background: #FBEDE6; border: 1.5px solid #B4532A; border-radius: 14px; padding: 16px 18px; color: #5C2A12">
+                  <p style="margin: 0; font-weight: 700">Não foi possível enviar a solicitação.</p>
+                  <p style="margin: 4px 0 0; font-size: 15px">{{errMsg}}</p>
+                  <a href="{{bookLink}}" target="_blank" rel="noopener" style="display: inline-block; margin-top: 10px; color: #2E4A2C; font-weight: 700">Enviar pelo WhatsApp</a>
+                </div>
+              </sc-if>
+            </sc-if>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <!-- Especialidades com abas -->
+  <section id="especialidades" style="background: #1F331E; color: #F3EEDF">
+    <div style="max-width: 1180px; margin: 0 auto; padding: clamp(56px, 9vw, 88px) clamp(18px, 4vw, 24px)">
+      <h2 style="margin: 0; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: clamp(32px, 4vw, 46px); color: #FBF9F3">Nossas especialidades</h2>
+      <p style="margin: 12px 0 40px; max-width: 40em; color: #D9D2BC">Escolha um tratamento e saiba sua especialidade e benefícios para ajudar você da melhor forma e bem-estar.</p>
+
+      <div data-region="tablist" role="tablist" aria-label="Especialidades" style="display: flex; flex-wrap: wrap; gap: 10px">
+        <sc-for list="{{tabs}}" as="t" hint-placeholder-count="6">
+          <button role="tab" aria-selected="{{t.selected}}" class="yy-tab" onClick="{{t.pick}}" style="{{t.style}}">{{t.name}}</button>
+        </sc-for>
+      </div>
+
+      <div data-region="tabpanel" role="tabpanel" style="margin-top: 28px; background: #FBF9F3; color: #26301F; border-radius: 20px; padding: clamp(24px, 4vw, 52px); display: flex; flex-wrap: wrap; gap: 40px">
+        <div style="flex: 1 1 300px; min-width: 0">
+          <h3 style="margin: 0; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: clamp(26px, 5vw, 34px); color: #1F331E">{{cur.name}}</h3>
+          <p style="margin: 16px 0 0; font-size: 18px; color: #3B4733">{{cur.intro}}</p>
+          <h4 style="margin: 32px 0 8px; font-size: 17px; color: #8A6A12">Como pode ajudar você</h4>
+          <p style="margin: 0; color: #3B4733">{{cur.help}}</p>
+          <sc-if value="{{cur.hasTypes}}" hint-placeholder-val="{{ false }}">
+            <h4 style="margin: 32px 0 12px; font-size: 17px; color: #8A6A12">Modalidades</h4>
+            <div style="display: flex; flex-direction: column; gap: 14px">
+              <sc-for list="{{cur.types}}" as="m" hint-placeholder-count="2">
+                <div style="border: 1px solid #E0D6B5; border-radius: 14px; padding: 16px 18px">
+                  <p style="margin: 0; font-family: Marcellus, Georgia, serif; font-size: 19px; color: #1F331E">{{m.title}}</p>
+                  <p style="margin: 6px 0 0; font-size: 16px; color: #3B4733">{{m.text}}</p>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+          <p style="margin: 20px 0 0; font-size: 15px; color: #5A6450"><strong style="color: #2E4A2C">Indicado para:</strong> {{cur.forWho}}</p>
+        </div>
+        <div style="flex: 1 1 260px; min-width: 0; background: #F1EAD3; border-radius: 16px; padding: clamp(20px, 4vw, 28px)">
+          <h4 style="margin: 0 0 16px; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: 22px; color: #1F331E">Benefícios</h4>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
+            <sc-for list="{{cur.benefits}}" as="b" hint-placeholder-count="4">
+              <li style="display: flex; gap: 12px; align-items: flex-start">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 4px"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>{{b}}</span>
+              </li>
+            </sc-for>
+          </ul>
+          <a class="yy-wa" href="https://wa.me/5521968009771" style="display: inline-block; margin-top: 28px; text-decoration: none; background: #2E4A2C; color: #FBF9F3; padding: 13px 22px; border-radius: 999px; font-weight: 700; font-size: 15px; transition: background .2s">Agendar {{cur.short}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" style="max-width: 1180px; margin: 0 auto; padding: clamp(56px, 9vw, 88px) clamp(18px, 4vw, 24px); display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+    <figure style="flex: 0 1 340px; min-width: 0; max-width: 340px; margin: 0 auto">
+      <img src="imagens/dr-weslley-barros.jpg" alt="Dr. Weslley Barros, fisioterapeuta, de jaleco branco e estetoscópio" style="display: block; width: 100%; aspect-ratio: 584 / 790; object-fit: cover; border-radius: 999px 999px 22px 22px; box-shadow: 0 0 0 8px #FBF9F3, 0 0 0 10px #C9A227">
+      <figcaption style="margin-top: 22px">
+        <span style="display: block; font-family: Marcellus, Georgia, serif; font-size: 26px; color: #1F331E">Dr. Weslley Barros</span>
+        <span style="display: block; margin-top: 2px; font-size: 15px; color: #5A6450">Fisioterapeuta · CREFITO 331513-F</span>
+      </figcaption>
+    </figure>
+    <div style="flex: 1 1 300px; min-width: 0; align-self: center">
+      <h2 style="margin: 0; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: clamp(32px, 4vw, 46px); color: #1F331E">O consultório</h2>
+      <p style="margin: 20px 0 0; color: #3B4733">O nome Yin Yang traduz a nossa forma de cuidar: buscar o equilíbrio entre corpo e mente, força e flexibilidade, tratamento e prevenção. À frente do consultório está o Dr. Weslley Barros, que monta cada plano de tratamento a partir de uma avaliação individual.</p>
+      <p style="margin: 16px 0 0; color: #3B4733">Atendemos pessoas de todas as idades, em um espaço tranquilo em Copacabana — e levamos o atendimento até você quando sair de casa não é uma opção.</p>
+    </div>
+    <div style="flex: 1 1 100%; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 16px">
+      <div style="border: 1px solid #E0D6B5; border-radius: 16px; padding: 22px">
+        <p style="margin: 0; font-family: Marcellus, Georgia, serif; font-size: 20px; color: #1F331E">Atendimento humanizado</p>
+        <p style="margin: 8px 0 0; font-size: 15px; color: #5A6450">Tempo para ouvir, explicar e acompanhar sua evolução.</p>
+      </div>
+      <div style="border: 1px solid #E0D6B5; border-radius: 16px; padding: 22px">
+        <p style="margin: 0; font-family: Marcellus, Georgia, serif; font-size: 20px; color: #1F331E">Plano personalizado</p>
+        <p style="margin: 8px 0 0; font-size: 15px; color: #5A6450">Técnicas combinadas conforme a sua necessidade.</p>
+      </div>
+      <div style="border: 1px solid #E0D6B5; border-radius: 16px; padding: 22px">
+        <p style="margin: 0; font-family: Marcellus, Georgia, serif; font-size: 20px; color: #1F331E">Todas as idades</p>
+        <p style="margin: 8px 0 0; font-size: 15px; color: #5A6450">De jovens atletas a idosos em reabilitação.</p>
+      </div>
+      <div style="border: 1px solid #E0D6B5; border-radius: 16px; padding: 22px">
+        <p style="margin: 0; font-family: Marcellus, Georgia, serif; font-size: 20px; color: #1F331E">Também em casa</p>
+        <p style="margin: 8px 0 0; font-size: 15px; color: #5A6450">Atendimento em domicílio com agendamento.</p>
+      </div>
+    </div>
+    <h3 style="flex: 1 1 100%; margin: 16px 0 -16px; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: 28px; color: #1F331E">Conheça o espaço</h3>
+    <div style="flex: 1 1 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 20px">
+      <figure style="margin: 0">
+        <img src="imagens/sala-de-pilates.jpg" alt="Sala de Pilates com Cadillac, Reformer, barril, Chair e espaldar sobre tatame azul" style="display: block; width: 100%; height: clamp(280px, 70vw, 420px); object-fit: cover; border-radius: 18px">
+        <figcaption style="margin-top: 10px; font-size: 14px; color: #5A6450">Sala de Pilates</figcaption>
+      </figure>
+      <figure style="margin: 0">
+        <img src="imagens/recepcao.jpg" alt="Recepção do consultório com o logo Yin Yang na parede" style="display: block; width: 100%; height: clamp(280px, 70vw, 420px); object-fit: cover; border-radius: 18px">
+        <figcaption style="margin-top: 10px; font-size: 14px; color: #5A6450">Recepção</figcaption>
+      </figure>
+      <figure style="margin: 0">
+        <img src="imagens/sala-de-espera.jpg" alt="Sala de espera com poltrona, mesinha amarela e planta pendente" style="display: block; width: 100%; height: clamp(280px, 70vw, 420px); object-fit: cover; border-radius: 18px">
+        <figcaption style="margin-top: 10px; font-size: 14px; color: #5A6450">Sala de espera</figcaption>
+      </figure>
+      <figure style="margin: 0">
+        <img src="imagens/sala-de-atendimento.jpg" alt="Sala de atendimento com maca e aparelhos de fisioterapia" style="display: block; width: 100%; height: clamp(280px, 70vw, 420px); object-fit: cover; border-radius: 18px">
+        <figcaption style="margin-top: 10px; font-size: 14px; color: #5A6450">Sala de atendimento</figcaption>
+      </figure>
+      <figure style="margin: 0">
+        <img src="imagens/pilates-reformer.jpg" alt="Aluno fazendo prancha no Reformer de Pilates" style="display: block; width: 100%; height: clamp(280px, 70vw, 420px); object-fit: cover; object-position: 55% 50%; border-radius: 18px">
+        <figcaption style="margin-top: 10px; font-size: 14px; color: #5A6450">Treino no Reformer</figcaption>
+      </figure>
+      <figure style="margin: 0">
+        <img src="imagens/pilates-cadillac.jpg" alt="Sala de Pilates com Cadillac, barril e espaldar" style="display: block; width: 100%; height: clamp(280px, 70vw, 420px); object-fit: cover; object-position: 40% 50%; border-radius: 18px">
+        <figcaption style="margin-top: 10px; font-size: 14px; color: #5A6450">Treino no Cadillac</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section id="avaliacoes" style="background: #F1EAD3">
+    <div style="max-width: 1180px; margin: 0 auto; padding: clamp(56px, 9vw, 88px) clamp(18px, 4vw, 24px)">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+        <div>
+          <h2 style="margin: 0; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: clamp(32px, 4vw, 46px); color: #1F331E">O que dizem nossos pacientes</h2>
+          <p style="margin: 10px 0 0; color: #5A6450">Avaliações reais de quem já passou pelo consultório.</p>
+          <div style="margin-top: 18px; display: flex; align-items: center; gap: 12px">
+            <span style="font-family: Marcellus, Georgia, serif; font-size: 44px; line-height: 1; color: #1F331E">4,8</span>
+            <span role="img" aria-label="Nota 4,8 de 5 estrelas" style="color: #B8901E; font-size: 22px; letter-spacing: 3px">★★★★★</span>
+            <span style="font-size: 15px; color: #5A6450">no Google</span>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Yin+Yang+Fisioterapia+e+Pilates+Av+Nossa+Senhora+de+Copacabana+1072" style="text-decoration: none; border: 1.5px solid #2E4A2C; color: #2E4A2C; padding: 13px 22px; border-radius: 999px; font-weight: 700; font-size: 15px">Ver avaliações no Google</a>
+      </div>
+      <div style="margin-top: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 20px">
+        <figure style="margin: 0; background: #FBF9F3; border-radius: 18px; padding: clamp(22px, 5vw, 28px); display: flex; flex-direction: column; gap: 16px">
+          <p role="img" aria-label="5 de 5 estrelas" style="margin: 0; color: #B8901E; font-size: 20px; letter-spacing: 3px">★★★★★</p>
+          <blockquote style="margin: 0; font-size: 17px; color: #26301F">“Estava com fortes dores na coluna e cervical e em poucas sessões o Weslley conseguiu me ajudar, através de tratamento adequado e atendimento humanizado. Muito obrigado, Weslley!”</blockquote>
+          <figcaption style="margin-top: auto; font-size: 14px; color: #5A6450">Renato Soares · Google</figcaption>
+        </figure>
+        <figure style="margin: 0; background: #FBF9F3; border-radius: 18px; padding: clamp(22px, 5vw, 28px); display: flex; flex-direction: column; gap: 16px">
+          <p role="img" aria-label="5 de 5 estrelas" style="margin: 0; color: #B8901E; font-size: 20px; letter-spacing: 3px">★★★★★</p>
+          <blockquote style="margin: 0; font-size: 17px; color: #26301F">“Faço tratamento continuado de RPG há um ano, obtendo progresso e melhoras significativas. Comecei lá pelo preço acessível, mas o que me fidelizou foram as técnicas…”</blockquote>
+          <figcaption style="margin-top: auto; font-size: 14px; color: #5A6450">Lucas Bogdanov Schmidt · Google</figcaption>
+        </figure>
+        <figure style="margin: 0; background: #FBF9F3; border-radius: 18px; padding: clamp(22px, 5vw, 28px); display: flex; flex-direction: column; gap: 16px">
+          <p role="img" aria-label="5 de 5 estrelas" style="margin: 0; color: #B8901E; font-size: 20px; letter-spacing: 3px">★★★★★</p>
+          <blockquote style="margin: 0; font-size: 17px; color: #26301F">“Consultório super profissional, fiz as sessões de fisioterapia e senti uma melhora muito boa com o Weslley.”</blockquote>
+          <figcaption style="margin-top: auto; font-size: 14px; color: #5A6450">Pedro Lee · Google</figcaption>
+        </figure>
+        <figure style="margin: 0; background: #FBF9F3; border-radius: 18px; padding: clamp(22px, 5vw, 28px); display: flex; flex-direction: column; gap: 16px">
+          <p role="img" aria-label="5 de 5 estrelas" style="margin: 0; color: #B8901E; font-size: 20px; letter-spacing: 3px">★★★★★</p>
+          <blockquote style="margin: 0; font-size: 17px; color: #26301F">“O Weslley é extremamente dedicado e profissional. Senti uma liberação profunda na sessão e minha postura foi corrigida!”</blockquote>
+          <figcaption style="margin-top: auto; font-size: 14px; color: #5A6450">Paciente de quiropraxia · avaliação via ClassPass</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section id="localizacao" style="background: #1F331E; color: #F3EEDF">
+    <div style="max-width: 1180px; margin: 0 auto; padding: clamp(56px, 9vw, 88px) clamp(18px, 4vw, 24px); display: flex; flex-wrap: wrap; gap: clamp(28px, 5vw, 48px); align-items: center">
+      <div style="flex: 1 1 300px; min-width: 0">
+        <h2 style="margin: 0; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: clamp(32px, 4vw, 46px); color: #FBF9F3">Localização</h2>
+        <p style="margin: 14px 0 0; max-width: 30em; color: #D9D2BC">Estamos no coração de Copacabana. Toque em um dos botões para ver o mapa ou traçar a rota até o consultório.</p>
+        <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Av+Nossa+Senhora+de+Copacabana+1072+sala+304+Copacabana+Rio+de+Janeiro" style="text-decoration: none; background: #C9A227; color: #1F331E; padding: 15px 24px; border-radius: 999px; font-weight: 700">Ver no Google Maps</a>
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Av+Nossa+Senhora+de+Copacabana+1072+Copacabana+Rio+de+Janeiro" style="text-decoration: none; border: 1.5px solid #E4C665; color: #F3EEDF; padding: 14px 24px; border-radius: 999px; font-weight: 700">Como chegar</a>
+          <a href="https://waze.com/ul?q=Av%20Nossa%20Senhora%20de%20Copacabana%201072%20Rio%20de%20Janeiro&amp;navigate=yes" style="text-decoration: none; border: 1.5px solid #E4C665; color: #F3EEDF; padding: 14px 24px; border-radius: 999px; font-weight: 700">Abrir no Waze</a>
+        </div>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Av+Nossa+Senhora+de+Copacabana+1072+sala+304+Copacabana+Rio+de+Janeiro" style="flex: 1 1 340px; min-width: 0; text-decoration: none; background: #FBF9F3; color: #26301F; border-radius: 22px; padding: clamp(24px, 5vw, 40px); display: flex; gap: 20px; align-items: flex-start; box-shadow: 0 0 0 2px #C9A227">
+        <svg aria-hidden="true" width="56" height="56" viewBox="0 0 24 24" fill="#F1EAD3" stroke="#8A6A12" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"></path><circle cx="12" cy="10" r="2.6" fill="#FBF9F3"></circle></svg>
+        <span style="display: flex; flex-direction: column; gap: 6px">
+          <span style="font-family: Marcellus, Georgia, serif; font-size: clamp(22px, 4vw, 28px); color: #1F331E; line-height: 1.25">Av. Nossa Senhora de Copacabana, 1072 — sala 304</span>
+          <span style="font-size: 16px; color: #3B4733">Copacabana, Rio de Janeiro — RJ · CEP 22060-002</span>
+          <span style="margin-top: 10px; font-size: 15px; color: #5A6450">Segunda a sexta-feira, das 9h às 20h</span>
+          <span style="margin-top: 10px; font-weight: 700; color: #2E4A2C; text-decoration: underline">Abrir o mapa</span>
+        </span>
+      </a>
+      <div style="flex: 1 1 100%; min-width: 0; border-radius: 22px; overflow: hidden; box-shadow: 0 0 0 2px #C9A227; background: #F1EAD3">
+        <iframe title="Mapa: Av. Nossa Senhora de Copacabana, 1072, Copacabana, Rio de Janeiro" src="https://www.google.com/maps?q=Av.+Nossa+Senhora+de+Copacabana,+1072+-+Copacabana,+Rio+de+Janeiro+-+RJ,+22060-002&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="display: block; width: 100%; height: clamp(300px, 50vw, 440px); border: 0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" style="max-width: 1180px; margin: 0 auto; padding: clamp(56px, 9vw, 88px) clamp(18px, 4vw, 24px); display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+    <div style="flex: 1 1 300px; min-width: 0">
+      <h2 style="margin: 0; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: clamp(32px, 4vw, 46px); color: #1F331E">Agende sua avaliação</h2>
+      <p style="margin: 14px 0 0; max-width: 32em; color: #3B4733">Converse com a gente pelo WhatsApp para tirar dúvidas, escolher o melhor horário ou pedir atendimento em domicílio.</p>
+      <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 22px">
+        <div style="display: flex; gap: 16px; align-items: flex-start">
+          <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"></path><circle cx="12" cy="10" r="2.6"></circle></svg>
+          <div>
+            <p style="margin: 0; font-weight: 700; color: #1F331E">Endereço</p>
+            <p style="margin: 2px 0 0; color: #3B4733">Av. Nossa Senhora de Copacabana, 1072, sala 304<br>Copacabana, Rio de Janeiro — RJ, 22060-002</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 16px; align-items: flex-start">
+          <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>
+          <div>
+            <p style="margin: 0; font-weight: 700; color: #1F331E">Telefone e WhatsApp</p>
+            <p style="margin: 2px 0 0"><a href="https://wa.me/5521968009771" style="font-size: 20px; font-weight: 700">(21) 96800-9771</a></p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 16px; align-items: flex-start">
+          <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 7v5l3.2 2"></path></svg>
+          <div>
+            <p style="margin: 0; font-weight: 700; color: #1F331E">Horário de atendimento</p>
+            <p style="margin: 2px 0 0; color: #3B4733">Segunda a sexta-feira, das 9h às 20h</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 16px; align-items: flex-start">
+          <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><rect x="7" y="2.5" width="10" height="19" rx="2.2"></rect><path d="M11 18.5h2"></path></svg>
+          <div>
+            <p style="margin: 0; font-weight: 700; color: #1F331E">Plataformas parceiras</p>
+            <p style="margin: 2px 0 0; color: #3B4733">Você também pode reservar e consultar as turmas abertas pelo aplicativo do <a href="https://classpass.pt/studios/yinyang-fisioterapia-e-pilates-rio-de-janeiro" style="font-weight: 700">ClassPass</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="flex: 1 1 300px; min-width: 0; background: #1F331E; color: #F3EEDF; border-radius: 24px; padding: clamp(26px, 6vw, 40px); display: flex; flex-direction: column; gap: 18px">
+      <p style="margin: 0; font-family: 'Dancing Script', cursive; font-size: clamp(26px, 6vw, 32px); color: #E4C665">Seu equilíbrio, nossa missão.</p>
+      <p style="margin: 0; color: #D9D2BC">A primeira consulta começa com uma avaliação completa para entender sua queixa e definir o tratamento ideal.</p>
+      <a class="yy-wa" href="https://wa.me/5521968009771" style="align-self: flex-start; text-decoration: none; background: #C9A227; color: #1F331E; padding: 16px 28px; border-radius: 999px; font-weight: 700">Chamar no WhatsApp</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Av+Nossa+Senhora+de+Copacabana+1072+Rio+de+Janeiro" style="color: #F3EEDF; font-weight: 600; font-size: 15px">Abrir no Google Maps</a>
+    </div>
+  </section>
+
+  <footer style="border-top: 1px solid #E6DFC9">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: #5A6450">
+      <span>Yin Yang Fisioterapia e Pilates · Dr. Weslley Barros</span>
+      <span>Av. Nossa Senhora de Copacabana, 1072, sala 304 — Copacabana, Rio de Janeiro — RJ, 22060-002</span>
+    </div>
+  </footer>
+
+  <a class="yy-pulse" href="https://wa.me/5521968009771?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Yin%20Yang%20e%20quero%20saber%20mais%20sobre%20os%20planos%20a%20partir%20de%20R%24%20200%2C00." aria-label="Saiba mais pelo WhatsApp" style="position: fixed; right: clamp(12px, 3vw, 28px); bottom: clamp(12px, 3vw, 28px); z-index: 60; display: flex; align-items: center; gap: 8px; text-decoration: none; background: #C9A227; color: #1F331E; padding: 14px 20px; border-radius: 999px; font-weight: 700; letter-spacing: 1px; box-shadow: 0 6px 18px rgba(20, 35, 20, 0.3)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F331E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3L3 21z"></path></svg>SAIBA MAIS</a>
+</div>
+</template>
+<script>
+/* Motor simples que desenha a página a partir do modelo acima */
+class DCLogic {
+  constructor(props) { this.props = props || {}; this.state = {}; }
+  setState(patch) { Object.assign(this.state, typeof patch === 'function' ? patch(this.state) : patch); YY.update(); }
+}
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { active: 0, svc: 0, place: 0, busy: [] };
+  }
+  componentDidMount() {
+    // No site publicado, busca os horários já reservados na planilha da clínica
+    const f = typeof window !== 'undefined' ? window.YY_OCUPADOS : null;
+    if (typeof f === 'function') f().then((l) => this.setState({ busy: Array.isArray(l) ? l : [] })).catch(() => {});
+  }
+  renderVals() {
+    const data = [
+      {
+        name: 'Fisioterapia', short: 'fisioterapia',
+        intro: 'Avaliação e tratamento de dores, lesões e limitações de movimento, com exercícios terapêuticos, terapia manual e recursos que aceleram a recuperação.',
+        help: 'Depois de uma avaliação detalhada, montamos um plano para tratar a causa da dor, recuperar a função e evitar que o problema volte — seja uma dor nas costas antiga, uma lesão no esporte ou a reabilitação depois de uma cirurgia.',
+        forWho: 'dores na coluna e articulações, tendinites, entorses, pós-operatório e reabilitação ortopédica.',
+        benefits: ['Alívio de dores e tensões', 'Recuperação de força e mobilidade', 'Reabilitação segura após lesões e cirurgias', 'Prevenção de novas lesões']
+      },
+      {
+        name: 'Pilates', short: 'Pilates',
+        intro: 'Exercícios nos aparelhos e no solo que fortalecem o centro do corpo, alongam e melhoram o controle dos movimentos, sempre orientados por fisioterapeuta.',
+        help: 'O Pilates trabalha força, flexibilidade e respiração ao mesmo tempo. As aulas são adaptadas ao seu momento: dá para começar do zero, usar o método na reabilitação ou aprimorar o condicionamento.',
+        forWho: 'quem quer melhorar a postura, fortalecer o corpo, prevenir dores ou complementar a fisioterapia.',
+        benefits: ['Fortalecimento do abdômen e da coluna', 'Mais flexibilidade e alongamento', 'Melhora da postura e do equilíbrio', 'Respiração mais consciente e menos estresse']
+      },
+      {
+        name: 'Quiropraxia', short: 'quiropraxia',
+        intro: 'Técnica manual que avalia e ajusta a coluna e as articulações para restabelecer o alinhamento e a mobilidade.',
+        help: 'Com ajustes precisos, a quiropraxia ajuda a liberar regiões travadas, reduzir a dor e devolver a amplitude dos movimentos — muitas vezes com sensação de alívio já nas primeiras sessões.',
+        forWho: 'dores nas costas e no pescoço, travamentos, má postura e tensões que limitam o movimento.',
+        benefits: ['Alívio de dores na coluna e no pescoço', 'Melhora do alinhamento e da postura', 'Mais mobilidade nas articulações', 'Sensação de leveza no corpo']
+      },
+      {
+        name: 'Acupuntura', short: 'acupuntura',
+        intro: 'Terapia de origem chinesa que aplica agulhas finas em pontos específicos do corpo para estimular o equilíbrio do organismo.',
+        help: 'A acupuntura é uma aliada no controle da dor e do estresse e pode ser combinada com a fisioterapia para potencializar os resultados do tratamento.',
+        forWho: 'dores crônicas, tensão muscular, dores de cabeça, ansiedade, estresse e dificuldade para dormir.',
+        benefits: ['Redução de dores crônicas', 'Relaxamento e controle do estresse', 'Melhora da qualidade do sono', 'Complemento a outros tratamentos']
+      },
+      {
+        name: 'Massagens', short: 'massagem',
+        intro: 'Massagem relaxante e massagem com pedras quentes vulcânicas: movimentos suaves e ritmados, com ou sem o calor das pedras, que soltam a musculatura, ativam a circulação e trazem uma sensação profunda de relaxamento.',
+        help: 'Ideal para desacelerar: a massagem alivia a tensão acumulada pelo dia a dia, pelo trabalho sentado ou pelo treino, e ajuda o corpo e a mente a descansar. Com as pedras quentes, o calor chega às camadas mais profundas dos músculos e potencializa esse relaxamento.',
+        types: [
+          { title: 'Massagem relaxante', text: 'Manobras suaves e contínuas, com óleo, que reduzem a tensão muscular e acalmam o corpo e a mente.' },
+          { title: 'Massagem com pedras quentes (pedras vulcânicas)', text: 'Pedras vulcânicas de basalto, lisas e aquecidas, são deslizadas e posicionadas em pontos do corpo. A pedra vulcânica retém o calor por mais tempo, o que aquece e relaxa a musculatura profunda, ativa a circulação e alivia dores e contraturas com menos pressão das mãos.' }
+        ],
+        forWho: 'quem sente o corpo tenso, cansado ou sobrecarregado pela rotina. Na massagem com pedras quentes, gestantes e pessoas com diabetes, varizes, problemas de circulação ou pele sensível devem fazer uma avaliação antes.',
+        benefits: ['Alívio da tensão muscular e de contraturas', 'Calor profundo que relaxa os músculos (pedras quentes)', 'Melhora da circulação sanguínea', 'Alívio de dores nas costas, pescoço e ombros', 'Redução do estresse e da ansiedade', 'Sono mais tranquilo e sensação de bem-estar']
+      },
+      {
+        name: 'Atendimento em domicílio', short: 'atendimento em casa',
+        intro: 'Levamos o tratamento até a sua casa, com o mesmo cuidado do consultório, para quem tem dificuldade de se deslocar ou prefere ser atendido no conforto do lar.',
+        help: 'O atendimento em casa garante a continuidade do tratamento para idosos, pessoas em recuperação de cirurgia ou com mobilidade reduzida — e facilita a rotina de quem tem pouco tempo.',
+        forWho: 'idosos, pós-operatório, pessoas acamadas ou com mobilidade reduzida e quem prefere a comodidade de casa.',
+        benefits: ['Conforto e segurança do seu lar', 'Sem deslocamento nem trânsito', 'Atenção exclusiva durante a sessão', 'Orientações adaptadas ao seu ambiente']
+      }
+    ];
+    const a = this.state.active;
+    const on = 'font-family: Mulish, sans-serif; font-size: 15px; font-weight: 700; min-height: 46px; padding: 10px 20px; border-radius: 999px; cursor: pointer; border: 1.5px solid #C9A227; background: #C9A227; color: #1F331E';
+    const off = 'font-family: Mulish, sans-serif; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 20px; border-radius: 999px; cursor: pointer; border: 1.5px solid #5E7155; background: transparent; color: #F3EEDF; transition: border-color .2s';
+    const svcs = ['Pilates', 'Fisioterapia', 'Quiropraxia', 'Acupuntura', 'Massagens'];
+    const places = ['No consultório', 'Em domicílio'];
+    const chipOn = 'font-family: Mulish, sans-serif; font-size: 15px; font-weight: 700; min-height: 44px; padding: 9px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2E4A2C; background: #2E4A2C; color: #FBF9F3';
+    const chipOff = 'font-family: Mulish, sans-serif; font-size: 15px; font-weight: 600; min-height: 44px; padding: 9px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #C9B98A; background: transparent; color: #2E4A2C';
+    const homeOk = (i) => i === 1 || i === 4;
+    const s = this.state.svc, p = homeOk(this.state.svc) ? this.state.place : 0;
+    const chipDisabled = 'font-family: Mulish, sans-serif; font-size: 15px; font-weight: 600; min-height: 44px; padding: 9px 18px; border-radius: 999px; cursor: not-allowed; border: 1.5px dashed #CFC4A3; background: transparent; color: #8C8670; opacity: 0.75';
+    // Agenda: datas a partir de D+2, somente segunda a sexta
+    const pad = (n) => (n < 10 ? '0' : '') + n;
+    const iso = (d) => d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+    const meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+    const dias = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'];
+    const hoje = new Date();
+    const minD = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() + 2);
+    const first = new Date(minD.getFullYear(), minD.getMonth(), minD.getDate());
+    while (first.getDay() === 0 || first.getDay() === 6) first.setDate(first.getDate() + 1);
+    const mOff = this.state.monthOff || 0;
+    const maxOff = 2;
+    const base = new Date(first.getFullYear(), first.getMonth() + mOff, 1);
+    const nDias = new Date(base.getFullYear(), base.getMonth() + 1, 0).getDate();
+    const selD = this.state.date || '';
+    const dayOn = 'width: 100%; aspect-ratio: 1 / 1; min-height: 38px; cursor: pointer; border: 1.5px solid #2E4A2C; background: #2E4A2C; color: #FBF9F3; border-radius: 10px; font-family: Mulish, sans-serif; font-size: 15px; font-weight: 700; padding: 0';
+    const dayOk = 'width: 100%; aspect-ratio: 1 / 1; min-height: 38px; cursor: pointer; border: 1.5px solid #C9B98A; background: #FFFFFF; color: #1F331E; border-radius: 10px; font-family: Mulish, sans-serif; font-size: 15px; font-weight: 700; padding: 0';
+    const dayNo = 'width: 100%; aspect-ratio: 1 / 1; min-height: 38px; cursor: not-allowed; border: 1px solid transparent; background: transparent; color: #A9A38E; border-radius: 10px; font-family: Mulish, sans-serif; font-size: 15px; padding: 0; text-decoration: line-through';
+    const cells = [];
+    for (let i = 0; i < base.getDay(); i++) cells.push({ blank: true, isDay: false });
+    for (let n = 1; n <= nDias; n++) {
+      const d = new Date(base.getFullYear(), base.getMonth(), n);
+      const w = d.getDay();
+      const ok = d >= minD && w >= 1 && w <= 5;
+      const k = iso(d);
+      const sel = ok && k === selD;
+      cells.push({ blank: false, isDay: true, num: String(n), disabled: !ok, pressed: sel ? 'true' : 'false',
+        aria: dias[w] + ', ' + n + ' de ' + meses[d.getMonth()] + (ok ? '' : ', indisponível'),
+        style: sel ? dayOn : (ok ? dayOk : dayNo),
+        pick: () => { if (ok) this.setState({ date: k, sendError: false }); } });
+    }
+    const navOn = 'width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; cursor: pointer; border: 1.5px solid #C9B98A; background: #FFFFFF; color: #1F331E; border-radius: 999px';
+    const navOff = 'width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; cursor: not-allowed; border: 1.5px solid #E6DFC9; background: transparent; color: #C4BDA6; border-radius: 999px';
+    const horas = ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00'];
+    const selH = this.state.time || '';
+    const slotOn = 'min-height: 44px; cursor: pointer; border: 1.5px solid #2E4A2C; background: #2E4A2C; color: #FBF9F3; border-radius: 10px; font-family: Mulish, sans-serif; font-size: 15px; font-weight: 700';
+    const slotOff = 'min-height: 44px; cursor: pointer; border: 1.5px solid #C9B98A; background: #FFFFFF; color: #1F331E; border-radius: 10px; font-family: Mulish, sans-serif; font-size: 15px; font-weight: 600';
+    const slotBusy = 'min-height: 44px; cursor: not-allowed; border: 1.5px dashed #D8CFB3; background: transparent; color: #A9A38E; border-radius: 10px; font-family: Mulish, sans-serif; font-size: 15px; text-decoration: line-through';
+    const busy = this.state.busy || [];
+    const isBusy = (h) => !!selD && busy.indexOf(selD + ' ' + h) >= 0;
+    let dataTxt = '';
+    if (selD) { const pp = selD.split('-').map(Number); const dd = new Date(pp[0], pp[1] - 1, pp[2]); dataTxt = dias[dd.getDay()] + ', ' + pad(pp[2]) + '/' + pad(pp[1]) + '/' + pp[0]; }
+    const nome = (this.state.name || '').trim();
+    const svcName = ['Pilates', 'Fisioterapia', 'Quiropraxia', 'Acupuntura', 'Massagens'][this.state.svc];
+    const localTxt = (homeOk(this.state.svc) && this.state.place === 1) ? 'em domicílio' : 'no consultório em Copacabana';
+    const fone = (this.state.phone || '').replace(/\D/g, '');
+    const selBusy = !!selH && isBusy(selH);
+    const ready = !!(selD && selH && nome.length >= 2 && fone.length >= 10 && !selBusy);
+    const fmtFone = (d) => d.length <= 2 ? (d ? '(' + d : '') : d.length <= 6 ? '(' + d.slice(0, 2) + ') ' + d.slice(2) : d.length <= 10 ? '(' + d.slice(0, 2) + ') ' + d.slice(2, 6) + '-' + d.slice(6) : '(' + d.slice(0, 2) + ') ' + d.slice(2, 7) + '-' + d.slice(7, 11);
+    const summary = 'Resumo: ' + svcName + ' ' + localTxt + (dataTxt ? ' · ' + dataTxt : ' · data a escolher') + (selH ? ' às ' + selH : '');
+    const bookMsg = 'Olá! Gostaria de solicitar uma avaliação.\n\nNome: ' + nome + '\nTratamento: ' + svcName + '\nWhatsApp: ' + fmtFone(fone) + '\nLocal: ' + localTxt + '\nData: ' + dataTxt + '\nHorário: ' + selH + '\n\nAguardo a confirmação do Dr. Weslley.';
+    const minLabel = dias[first.getDay()] + ', ' + pad(first.getDate()) + '/' + pad(first.getMonth() + 1);
+    const msg = 'Olá! Vi o site da Yin Yang e quero saber mais sobre os planos de ' + svcs[s] + ' a partir de R$ 200,00, ' + (p === 1 ? 'com atendimento em domicílio.' : 'no consultório em Copacabana.');
+    return {
+      svcChips: svcs.map((l, i) => ({ label: l, pressed: i === s ? 'true' : 'false', style: i === s ? chipOn : chipOff, pick: () => this.setState(homeOk(i) ? { svc: i } : { svc: i, place: 0 }) })),
+      placeChips: places.map((l, i) => {
+        const blocked = i === 1 && !homeOk(s);
+        return { label: l, pressed: i === p ? 'true' : 'false', disabled: blocked, title: blocked ? 'Disponível apenas para Fisioterapia e Massagens' : '', style: blocked ? chipDisabled : (i === p ? chipOn : chipOff), pick: () => { if (!blocked) this.setState({ place: i }); } };
+      }),
+      planLabel: svcs[s] + ' · ' + places[p].toLowerCase(),
+      waLink: 'https://wa.me/5521968009771?text=' + encodeURIComponent(msg),
+      bookOpen: !!this.state.bookOpen,
+      bookOpenAttr: this.state.bookOpen ? 'true' : 'false',
+      toggleBook: () => this.setState({ bookOpen: !this.state.bookOpen }),
+      sent: !!this.state.sent,
+      formShow: !this.state.sent,
+      resetBook: () => this.setState({ sent: false, sendError: false, date: '', time: '', monthOff: 0 }),
+      monthLabel: meses[base.getMonth()].charAt(0).toUpperCase() + meses[base.getMonth()].slice(1) + ' de ' + base.getFullYear(),
+      prevDisabled: mOff <= 0,
+      nextDisabled: mOff >= maxOff,
+      prevStyle: mOff <= 0 ? navOff : navOn,
+      nextStyle: mOff >= maxOff ? navOff : navOn,
+      prevMonth: () => { if (mOff > 0) this.setState({ monthOff: mOff - 1 }); },
+      nextMonth: () => { if (mOff < maxOff) this.setState({ monthOff: mOff + 1 }); },
+      cells: cells,
+      minLabel: minLabel,
+      slots: horas.map((h) => {
+        const b = isBusy(h);
+        return { label: h, aria: h + (b ? ', horário já reservado' : ''), disabled: b, pressed: (!b && h === selH) ? 'true' : 'false', style: b ? slotBusy : (h === selH ? slotOn : slotOff), pick: () => { if (!b) this.setState({ time: h, sendError: false }); } };
+      }),
+      name: this.state.name || '',
+      setName: (e) => this.setState({ name: e.target.value }),
+      summary: summary,
+      ready: ready,
+      notReady: !ready,
+      phone: this.state.phone || '',
+      setPhone: (e) => this.setState({ phone: fmtFone(String(e.target.value || '').replace(/\D/g, '').slice(0, 11)) }),
+      hp: this.state.hp || '',
+      setHp: (e) => this.setState({ hp: e.target.value }),
+      sending: !!this.state.sending,
+      sendLabel: this.state.sending ? 'Enviando…' : 'Enviar solicitação',
+      sendError: !!this.state.sendError,
+      errMsg: this.state.errMsg || '',
+      bookLink: 'https://wa.me/5521968009771?text=' + encodeURIComponent(bookMsg),
+      enviar: () => {
+        if (!ready || this.state.sending) return;
+        const dados = { nome: nome, whatsapp: fone, tratamento: svcName, local: localTxt === 'em domicílio' ? 'Em domicílio' : 'No consultório', data: selD, hora: selH, site: this.state.hp || '' };
+        this.setState({ sending: true, sendError: false });
+        const ok = () => this.setState({ sending: false, sent: true });
+        // No site publicado, envia para a planilha da clínica; na prévia, só simula o envio
+        const f = typeof window !== 'undefined' ? window.YY_ENVIAR : null;
+        if (typeof f !== 'function') { setTimeout(ok, 600); return; }
+        f(dados).then(ok).catch((err) => {
+          const ocupado = !!(err && err.message === 'ocupado');
+          this.setState({ sending: false, sendError: true, time: ocupado ? '' : this.state.time,
+            busy: ocupado ? busy.concat([selD + ' ' + selH]) : busy,
+            errMsg: ocupado ? 'Esse horário acabou de ser reservado. Escolha outro horário e envie de novo.' : 'Verifique sua conexão e tente de novo, ou envie sua solicitação pelo WhatsApp.' });
+        });
+      },
+      solicitLink: 'https://wa.me/5521968009771?text=' + encodeURIComponent('Olá! Gostaria de solicitar atendimento de ' + svcs[s] + ' ' + (p === 1 ? 'em domicílio' : 'no consultório em Copacabana') + '. Quais horários estão disponíveis?'),
+      tabs: data.map((d, i) => ({
+        name: d.name,
+        selected: i === a ? 'true' : 'false',
+        style: i === a ? on : off,
+        pick: () => this.setState({ active: i })
+      })),
+      cur: Object.assign({}, data[a], { hasTypes: !!data[a].types, types: data[a].types || [] })
+    };
+  }
+}
+
+const YY = (() => {
+  const tpl = document.getElementById('yy-tpl');
+  const app = document.getElementById('app');
+  const comp = new Component({});
+  const getPath = (scope, expr) => {
+    expr = expr.trim();
+    if (expr === 'true') return true;
+    if (expr === 'false') return false;
+    if (/^-?\d+(\.\d+)?$/.test(expr)) return Number(expr);
+    return expr.split('.').reduce((o, k) => (o == null ? undefined : o[k]), scope);
+  };
+  const whole = /^\s*\{\{([^}]+)\}\}\s*$/;
+  const interp = (s, scope) => s.replace(/\{\{([^}]+)\}\}/g, (_, e) => { const v = getPath(scope, e); return v == null ? '' : String(v); });
+  function render(node, scope) {
+    if (node.nodeType === 3) return [document.createTextNode(interp(node.nodeValue, scope))];
+    if (node.nodeType !== 1) return [];
+    const tag = node.tagName.toLowerCase();
+    if (tag === 'sc-if') {
+      const m = (node.getAttribute('value') || '').match(whole);
+      return (m ? getPath(scope, m[1]) : false) ? kids(node, scope) : [];
+    }
+    if (tag === 'sc-for') {
+      const m = (node.getAttribute('list') || '').match(whole);
+      const list = (m && getPath(scope, m[1])) || [];
+      const as = node.getAttribute('as') || 'item';
+      const out = [];
+      list.forEach((it, i) => { const s = Object.create(scope); s[as] = it; s.$index = i; out.push(...kids(node, s)); });
+      return out;
+    }
+    const svg = node.namespaceURI === 'http://www.w3.org/2000/svg';
+    const el = svg ? document.createElementNS(node.namespaceURI, node.tagName) : document.createElement(tag);
+    for (const a of Array.from(node.attributes)) {
+      const name = a.name;
+      if (name.startsWith('hint-')) continue;
+      const m = a.value.match(whole);
+      if (name.startsWith('on') && m) {
+        const fn = getPath(scope, m[1]);
+        if (typeof fn === 'function') el.addEventListener(name === 'onchange' ? 'input' : name.slice(2), fn);
+        continue;
+      }
+      if (m) {
+        const v = getPath(scope, m[1]);
+        if (v === false || v == null) continue;
+        el.setAttribute(name, v === true ? '' : String(v));
+        if (name === 'value' && 'value' in el) el.value = String(v);
+      } else el.setAttribute(name, a.value.includes('{{') ? interp(a.value, scope) : a.value);
+    }
+    const inner = tag === 'template' ? [] : kids(node, scope);
+    inner.forEach((c) => el.appendChild(c));
+    return [el];
+  }
+  function kids(node, scope) { const out = []; node.childNodes.forEach((c) => out.push(...render(c, scope))); return out; }
+  const scope = () => Object.assign({}, comp.renderVals());
+  window.YY_COMP_DID_MOUNT = () => { if (typeof comp.componentDidMount === 'function') comp.componentDidMount(); };
+  function mount() { const s = scope(); kids(tpl.content, s).forEach((n) => app.appendChild(n)); }
+  function update() {
+    const s = scope();
+    const act = document.activeElement; const id = act && act.id; const pos = act && act.selectionStart; const len0 = act && typeof act.value === 'string' ? act.value.length : 0;
+    tpl.content.querySelectorAll('[data-region]').forEach((t) => {
+      const live = app.querySelector('[data-region="' + t.getAttribute('data-region') + '"]');
+      if (live) live.replaceWith(...render(t, s));
+    });
+    if (id) { const n = document.getElementById(id); if (n) { n.focus(); if (pos != null && n.setSelectionRange) try { const np = Math.max(0, pos + (String(n.value || '').length - len0)); n.setSelectionRange(np, np); } catch (e) {} } }
+  }
+  return { mount, update };
+})();
+YY.mount();
+if (typeof YY_COMP_DID_MOUNT === 'function') YY_COMP_DID_MOUNT();
+
+/* Avisos para a clínica pelo app ntfy (canal: yinyang-fisio-9f6fd6ee7a) */
+(() => {
+  const CANAL = 'yinyang-fisio-9f6fd6ee7a';
+  const avisar = (title, message, tags) => {
+    try {
+      fetch('https://ntfy.sh/', { method: 'POST', body: JSON.stringify({ topic: CANAL, title: title, message: message, tags: tags }) }).catch(() => {});
+    } catch (e) {}
+  };
+  const aparelho = /Mobi|Android|iPhone/i.test(navigator.userAgent) ? 'celular' : 'computador';
+  let origem = 'acesso direto';
+  try {
+    const r = document.referrer ? new URL(document.referrer).hostname : '';
+    if (/google\./.test(r)) origem = 'Google';
+    else if (/instagram\./.test(r)) origem = 'Instagram';
+    else if (/facebook\.|fb\./.test(r)) origem = 'Facebook';
+    else if (/whatsapp\.|wa\.me/.test(r)) origem = 'WhatsApp';
+    else if (r && r !== location.hostname) origem = r;
+  } catch (e) {}
+  let nova = true;
+  try { nova = !sessionStorage.getItem('yy-visita'); sessionStorage.setItem('yy-visita', '1'); } catch (e) {}
+  if (nova) avisar('Novo acesso ao site', 'Alguém abriu o site agora pelo ' + aparelho + ' (' + origem + ').', ['eyes']);
+  document.addEventListener('click', (ev) => {
+    const a = ev.target.closest && ev.target.closest('a[href*="wa.me"]');
+    if (!a) return;
+    let texto = '';
+    try { texto = new URL(a.href).searchParams.get('text') || ''; } catch (e) {}
+    if (/solicitar uma avalia/i.test(texto)) {
+      const resumo = texto.split('\n').filter((l) => /^(Tratamento|Local|Data|Hor)/.test(l)).join('\n');
+      avisar('Nova solicitação de avaliação', resumo + '\nConfira a mensagem no WhatsApp.', ['calendar']);
+    } else {
+      avisar('Clique no WhatsApp', 'Um visitante clicou para conversar no WhatsApp' + (/planos de/.test(texto) ? ' sobre os planos (' + (texto.match(/planos de ([^ ]+)/) || [,''])[1] + ').' : '.'), ['speech_balloon']);
+    }
+  }, true);
+})();
+</script>
+</body>
+</html>
